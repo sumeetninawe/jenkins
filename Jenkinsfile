@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Hello, world!'
-                sh 'node --version'
+                sh '/usr/local/bin/node --version' 
             }
         }
         stage('Test') {
