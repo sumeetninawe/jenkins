@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building Hello, world!'
-                sh '/usr/local/bin/node --version' 
+                // echo 'Building Hello, world!'
+                sh 'process.version' 
             }
         }
         stage('Test') {
