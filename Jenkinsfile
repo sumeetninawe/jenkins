@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 // echo 'Building Hello, world!'
-                sh 'process.version' 
+                console.log("Running NodeJS Env.")
             }
         }
         stage('Test') {
